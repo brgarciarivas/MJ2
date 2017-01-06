@@ -1,0 +1,44 @@
+.SplashPage{
+	width: 100vw;
+	
+	position: relative;
+	.photo{
+		background-image: url('http://d1wbxby8dwa4u.cloudfront.net/namecheap/MXSyline.jpg');
+		background-size: 180%;
+		background-repeat: no-repeat;
+		background-position: top right;
+		height: 210px;
+		width: 100vw
+	}
+	.text{
+		position: absolute;
+		color: @white;
+		line-height: 20px;
+		width: 80%;
+		top: 5%;
+		left: 5%;
+		font-size: @defaultFontSize * .3;
+	}
+}
+
+@media screen and (min-width: @sm) {
+    .SplashPage{
+		width: 100vw;
+		
+		position: relative;
+		.photo{
+			background-size: 100%;
+			background-position: center ;
+			height: 400px;
+		}
+		.text{
+			position: absolute;
+			color: @white;
+			line-height: 60px;
+			width: 55%;
+			top: 15%;
+			right: 30%;
+			font-size: @defaultFontSize ;
+		}
+	}
+}

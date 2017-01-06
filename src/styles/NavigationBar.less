@@ -1,0 +1,41 @@
+.NavigationBar{
+	height: 80px;
+	background-color: @blue;
+	justify-content: space-between;
+	padding-left: .5rem;
+	padding-right: .5rem;
+
+	.logo{	
+		height: 80px;
+		width: 100px;
+		background-image: url('http://d1wbxby8dwa4u.cloudfront.net/namecheap/BlueWhiteLetterLogo.png');
+		background-position: center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.section{
+		color: @white;
+		width: 180px;
+		justify-content: space-around;
+		p{
+			font-size: @defaultFontSize * .3;
+		}
+	}
+}
+
+@media screen and (min-width: @sm) {
+    .NavigationBar{
+		
+		padding-left: 2rem;
+		padding-right: 2rem;
+
+		.section{
+			width: 250px;
+			justify-content: space-between;
+			p{
+				font-size: @defaultFontSize * .5;
+			}
+		}
+    }
+}
+                

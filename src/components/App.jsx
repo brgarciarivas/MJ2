@@ -6,6 +6,7 @@ import _ from 'lodash'
 
 // app components
 import Base from './Base';
+import NavigationBar from './NavigationBar';
 
 export default class App extends Base {
     constructor(props) {
@@ -24,7 +25,8 @@ export default class App extends Base {
     render() {
         
         return (
-            <div>
+            <div className='App'>
+                <NavigationBar/>
                 {this.props.children}
             </div>
         )

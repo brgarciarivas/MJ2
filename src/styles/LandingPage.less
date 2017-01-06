@@ -1,10 +1,35 @@
 .LandingPage {
     // CSS Rules
-    background-color: @blue;
+    //background-color: @blue;
     // LESS mixins
+
     .column;
     // Nested elements in each component
     h6 {
         text-decoration: italic;
     }
+    .sections{
+    	position: relative;
+    }
+    .team{
+    	background-image: url('http://d1wbxby8dwa4u.cloudfront.net/namecheap/businessTeam.jpg');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		height: 310px;
+		width: 47vw;
+		position: absolute;
+		top: -10px;
+		right: 1px;
+    }
+}
+
+@media screen and (min-width: @sm) {
+    .LandingPage{
+		.team{
+			height: 400px;
+			width: 55vw;
+			top: 600px;
+	    }
+	}
 }

@@ -1,0 +1,23 @@
+.Global{
+	background-color: @blue;
+	width: 70vw;
+	height: 200px;
+	position: absolute;	
+	z-index: 2;
+	right: 1px;
+	top: 1px;
+	clip-path: polygon(0 1%, 100% 0, 100% 100%, 33% 100%);
+	background: linear-gradient(-135deg, #0288d1, #81d4fa);
+}
+
+@media screen and (min-width: @sm) {
+    .Global{
+		height: 600px;
+		clip-path: polygon(0 0%, 100% 0, 100% 100%, 21.5% 100%);
+		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+		transition: box-shadow .2s ease;
+	}
+	.Global:hover{
+		 box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	}
+}

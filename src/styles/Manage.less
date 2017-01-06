@@ -1,0 +1,26 @@
+.Manage{
+	background-color: @blue;
+	position: absolute;
+	top: 195px;
+	width: 65vw;
+	height: 200px;
+	clip-path: polygon(.5% 31%, 80.5% 1%, 100% 47%, 0 80%);
+	background: linear-gradient(14deg, #0288d1, #039be5);
+
+}
+
+@media screen and (min-width: @sm) {
+	.Manage{
+		
+		position: absolute;
+		top: 600px;
+		width: 64.5vw;
+		height: 720px;
+		clip-path: polygon(0% 25%, 70% 0%, 83% 48%, 0 80%);
+		box-shadow: none;
+		transition: box-shadow .2s ease;
+	}
+	.Manage:hover{
+		 box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	}
+}
