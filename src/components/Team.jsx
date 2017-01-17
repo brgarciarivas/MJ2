@@ -3,15 +3,12 @@ import React from 'react';
 import Base from './Base';
 import SplashPage from './SplashPage';
 import Sections from './Sections';
-import Team from './Team';
 
-export default class LandingPage extends Base {
+export default class Team extends Base {
     render() {
         return (
-            <div className='LandingPage'>
-            	<SplashPage/>
-                <Sections/>
-                
+            <div className='Team'>
+            	fuego
             </div>
         );
     }
