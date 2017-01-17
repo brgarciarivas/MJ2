@@ -28,7 +28,8 @@ var cors = require('cors');
 
 var whitelist = [
     'http://localhost:8080',
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://testdeploymj2.herokuapp.com'
 ];
 var corsOptions = {
     origin: function(origin, callback) {
