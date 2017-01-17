@@ -8,16 +8,48 @@
 	top: 1px;
 	clip-path: polygon(0 1%, 100% 0, 100% 100%, 33% 100%);
 	background: linear-gradient(-135deg, #0288d1, #81d4fa);
+	text-align: right;
+
+		h1{
+			font-size: @defaultFontSize * .3;
+			
+		}
+		p{
+			margin: 0;
+			width: 200px;
+			font-size: @defaultFontSize * .2;
+			line-height: 13px;
+		}
+		.icon{
+			color: @black;
+		}
 }
 
 @media screen and (min-width: @sm) {
     .Global{
 		height: 600px;
 		clip-path: polygon(0 0%, 100% 0, 100% 100%, 21.5% 100%);
-		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-		transition: box-shadow .2s ease;
+		h1{
+			margin-top: 90px;
+			position: relative;
+			right: 50px;
+			font-size: @defaultFontSize * .8 ;
+			
+		}
+		p{
+			position: absolute;
+			margin: 0;
+			width: 500px;
+			font-size: @defaultFontSize * .4;
+			line-height: 40px;
+			right: 50px;
+		}
+		.icon{
+			position: absolute;
+			bottom: 10%;
+			right: 50px;
+		}
 	}
-	.Global:hover{
-		 box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-	}
+
+	
 }
