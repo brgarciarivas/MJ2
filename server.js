@@ -29,7 +29,8 @@ var cors = require('cors');
 var whitelist = [
     'http://localhost:8080',
     'http://localhost:3000',
-    'https://testdeploymj2.herokuapp.com'
+    'https://testdeploymj2.herokuapp.com',
+
 ];
 var corsOptions = {
     origin: function(origin, callback) {
@@ -42,23 +43,23 @@ var corsOptions = {
 };
 app.use(cors(corsOptions));
 
-// GraphiQL Docs
-var graphqlHTTP = require('express-graphql');
-var apiSchema = require('./api/schema');
+// // GraphiQL Docs
+// var graphqlHTTP = require('express-graphql');
+// var apiSchema = require('./api/schema');
 
-app.use('/api/v/:vid/graph', graphqlHTTP(function(req, res) {
-    return {
-        schema: apiSchema,
-        rootValue: {
-            req: req,
-            res: res
-        },
-        pretty: true,
-        graphiql: true
-    };
-}));
+// app.use('/api/v/:vid/graph', graphqlHTTP(function(req, res) {
+//     return {
+//         schema: apiSchema,
+//         rootValue: {
+//             req: req,
+//             res: res
+//         },
+//         pretty: true,
+//         graphiql: true
+//     };
+// }));
 
 
 app.listen(port, function() {
-    console.log('SetLife-ReactWithApi: Server running on port ' + port);
+    console.log('Mj2-ReactWithApi: Server running on port ' + port);
 });
